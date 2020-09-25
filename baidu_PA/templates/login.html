@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		INDEX
+	</title>
+</head>
+<body>
+	<!-- POST 隐式提交，GET 显示提交，action 提交位置 -->
+	<form action="/login" method="POST" enctype="multipart/form-data" >
+		Please upload the pic<br><br>
+		<input type="file" name="pic_file" title="please select a pic" value="select a pic">
+
+
+		
+		<!-- <input type="text" name="pic_name"> -->
+
+
+		<input type="submit" value="upload">
+
+
+	
+	</form>
+	<br>
+	{{msg}}
+	<br>
+	File name:{{name}}
+
+</body>
+</html>
